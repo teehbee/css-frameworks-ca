@@ -46,6 +46,7 @@ $yellow:  #ffc107 ;
 $green:   #198754 ;
 $teal:    #20c997 ;
 $cyan:    #0dcaf0 ;
+$hb-green: #466349;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -63,7 +64,8 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "hb-green": $hb-green
 ) ;
 // scss-docs-end colors-map
 
@@ -317,7 +319,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "hb-green": $hb-green
 ) ;
 // scss-docs-end theme-colors-map
 

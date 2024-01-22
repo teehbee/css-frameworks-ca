@@ -11,3 +11,30 @@
 // Bootstrap main file
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// My custom components
+
+@import "buttons";
+
+$mobile-frontpage-border-radius: 50px;
+
+.br-frontpage-large {
+  border-top-left-radius: $mobile-frontpage-border-radius;
+  border-top-right-radius: $mobile-frontpage-border-radius;
+}
+
+.br-frontpage-bottom {
+  border-bottom-left-radius: $mobile-frontpage-border-radius;
+  border-bottom-right-radius: $mobile-frontpage-border-radius;
+}
+
+.br-frontpage-img {
+  border-top-left-radius: $mobile-frontpage-border-radius;
+  border-bottom-left-radius: $mobile-frontpage-border-radius;
+}
+
+.frontpage-height {
+  max-height: 800px;
+}
+
+// br-frontpage-large
