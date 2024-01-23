@@ -46,7 +46,9 @@ $yellow:  #ffc107 ;
 $green:   #198754 ;
 $teal:    #20c997 ;
 $cyan:    #0dcaf0 ;
-$hb-green: #466349;
+$frontpage-green: #466349;
+$frontpage-yellow: #FFB800; 
+$frontpage-white: #FFF;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -65,7 +67,9 @@ $colors: (
   "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800,
-  "hb-green": $hb-green
+  "frontpage-green":   $frontpage-green,
+  "frontpage-yellow":  $frontpage-yellow,
+  "frontpage-white":   $frontpage-white
 ) ;
 // scss-docs-end colors-map
 
@@ -308,6 +312,9 @@ $warning:       $yellow ;
 $danger:        $red ;
 $light:         $gray-100 ;
 $dark:          $gray-900 ;
+$frontpage-green:   $frontpage-green;
+$frontpage-yellow:  $frontpage-yellow; 
+$frontpage-white:   $frontpage-white;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -320,7 +327,6 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "hb-green": $hb-green
 ) ;
 // scss-docs-end theme-colors-map
 
@@ -418,6 +424,8 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6-custom: $spacer * 5,
+  7-custom: $spacer * 8
 ) ;
 // scss-docs-end spacer-variables-maps
 
@@ -608,9 +616,11 @@ $aspect-ratios: (
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
+$font-family-mulish:  Mulish, Arial, sans-serif;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) ;
 $font-family-code:            var(--#{$prefix}font-monospace) ;
+
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
@@ -618,6 +628,7 @@ $font-size-root:              null ;
 $font-size-base:              1rem ; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 ;
 $font-size-lg:                $font-size-base * 1.25 ;
+$font-size-2rem:              2rem;
 
 $font-weight-lighter:         lighter ;
 $font-weight-light:           300 ;
@@ -811,7 +822,6 @@ $input-btn-font-size-lg:      $font-size-lg ;
 
 $input-btn-border-width:      var(--#{$prefix}border-width) ;
 // scss-docs-end input-btn-variables
-
 
 // Buttons
 //

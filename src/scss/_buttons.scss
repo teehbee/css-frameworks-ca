@@ -1,4 +1,4 @@
-// @import "variables";
+ @import "variables";
 
 // .btn {
 //   &-unique {
@@ -8,3 +8,25 @@
     
 //   }
 // }
+
+.btn {
+  &-login {
+    @include button-variant($frontpage-yellow, $frontpage-yellow);
+
+    font-family: 'Times New Roman', Times, serif;
+
+    background: $frontpage-yellow;
+
+    font-weight: bold;
+
+    @include media-breakpoint-up("lg") {
+
+      background: $frontpage-green;
+
+      border: $frontpage-green;
+
+      color: $frontpage-white;
+
+    }
+  }
+}
