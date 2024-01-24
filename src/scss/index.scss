@@ -119,6 +119,14 @@ $mobile-frontpage-border-radius: 50px;
   }
  }
 
+ .text-green-lg-white {
+  color: $frontpage-green;
+
+  @include media-breakpoint-up("lg") {
+    color: $frontpage-white;
+  }
+ }
+
    // Font sizes - Variables
 
    $custom-fs-0-625rem: 0.625rem;
@@ -140,6 +148,10 @@ $mobile-frontpage-border-radius: 50px;
 
  .fs-1-25-rem {
   font-size: $custom-fs-1-25-rem;
+ }
+
+ .fs-1-5-rem {
+  font-size: $custom-fs-1-5rem;
  }
 
 
@@ -175,6 +187,14 @@ $mobile-frontpage-border-radius: 50px;
 
   @include media-breakpoint-up("lg") {
     font-size: $custom-fs-1-5rem;
+  }
+ }
+
+ .fs-1-5rem-lg-2rem {
+  font-size: $custom-fs-1-5rem;
+
+  @include media-breakpoint-up("lg") {
+    font-size: $custom-fs-2rem;
   }
  }
 
