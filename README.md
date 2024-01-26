@@ -1,4 +1,4 @@
-# Social media site
+# Social media site - Hikebuddy
 
 <img src=assets/img/screenshot.png>
 
